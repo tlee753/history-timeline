@@ -16,7 +16,7 @@ p
 #container
     display: grid
     grid-template-columns: 4% 12% 12% 12% 12% 12% 12% 12% 12%
-    grid-template-rows: 30px 4230px
+    grid-template-rows: 30px 4460px 200px
 
     .region-title
         line-height: 30px
@@ -82,15 +82,16 @@ p
 
         .dynasty-info
             visibility: hidden
-            width: 360px
+            width: 240px
             position: absolute
-            z-index: 1
+            z-index: 2
             top: 100%
             left: 50%
-            margin-left: -180px
+            margin-left: -120px
             background: white
             color: black
             border-radius: 2px
+            padding: 0 4px
 
         &:hover .dynasty-info
             visibility: visible
