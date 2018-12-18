@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+body {
+  background: black;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px; }
+
+#container {
+  display: grid;
+  grid-template-columns: 4% 12% 12% 12% 12% 12% 12% 12% 12%;
+  grid-template-rows: 30px 4230px; }
+  #container .region-title {
+    line-height: 30px; }
+  #container .region-content {
+    position: relative;
+    border-radius: 2px; }
+  #container #africa {
+    background: maroon; }
+  #container #asia {
+    background: coral; }
+  #container #europe {
+    background: gold; }
+  #container #middle-east {
+    background: mediumseagreen; }
+  #container #southeast-asia {
+    background: seagreen; }
+  #container #north-america {
+    background: lightseagreen; }
+  #container #south-america {
+    background: steelblue; }
+  #container #oceania {
+    background: darkmagenta; }
+  #container .dynasty {
+    background: white;
+    color: black;
+    position: absolute;
+    word-break: break-all;
+    padding: 0 2px;
+    border-radius: 2px;
+    left: 0;
+    right: 0; }
+    #container .dynasty .dynasty-begin {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1; }
+    #container .dynasty .dynasty-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1; }
+    #container .dynasty .dynasty-end {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1; }
+    #container .dynasty .dynasty-info {
+      visibility: hidden;
+      width: 360px;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 50%;
+      margin-left: -180px;
+      background: white;
+      color: black;
+      border-radius: 2px; }
+    #container .dynasty:hover .dynasty-info {
+      visibility: visible; }
+    #container .dynasty .timeline-marker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      color: black; }
+
+/*# sourceMappingURL=main.css.map */
