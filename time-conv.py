@@ -57,4 +57,4 @@ elif (end >= 1915):
     bot /= 0.15
     bot -= 3960
 
-print("height is ", -bot - -top)
+print("height is ", int(-bot - -top))

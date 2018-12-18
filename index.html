@@ -4,6 +4,7 @@
     <link href="main.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
+    <div id="year-display">0000 CE</div>
     <div id="container">
         <div class="region-title">Year</div>
         <div class="region-title">Africa</div>
@@ -59,9 +60,9 @@
                 <hr class="timeline-marker" style="top: 300px">
                 <hr class="timeline-marker" style="top: 400px">
             </div>
-            <div class="dynasty" style="top: 2700px; height: 800px; background: mediumaquamarine;">
+            <div class="dynasty" style="top: 2700px; height: 600px; background: mediumaquamarine;">
                 <p class="dynasty-begin">1500 CE</p>
-                <p class="dynasty-content">Global Interdependence (Lines = 100 Years)</p>
+                <p class="dynasty-content">Global Interdependence (Lines = 50 Years)</p>
                 <p class="dynasty-end">1800 CE</p>
                 <hr class="timeline-marker" style="top: 100px">
                 <hr class="timeline-marker" style="top: 200px">
@@ -71,7 +72,7 @@
                 <hr class="timeline-marker" style="top: 600px">
                 <hr class="timeline-marker" style="top: 700px">
             </div>
-            <div class="dynasty" style="top: 3500px; height: 460px; background: DarkCyan;">
+            <div class="dynasty" style="top: 3300px; height: 460px; background: DarkCyan;">
                 <p class="dynasty-begin">1800 CE</p>
                 <p class="dynasty-content">Industry and Imperialism (Lines = 25 Years)</p>
                 <p class="dynasty-end">1915 CE</p>
@@ -80,7 +81,7 @@
                 <hr class="timeline-marker" style="top: 300px">
                 <hr class="timeline-marker" style="top: 400px">
             </div>
-            <div class="dynasty" style="top: 3960px; height: 500px; background: CornflowerBlue;">
+            <div class="dynasty" style="top: 3760px; height: 500px; background: CornflowerBlue;">
                 <p class="dynasty-begin">1915 CE</p>
                 <p class="dynasty-content">The Contemporary World (Lines = 15 Years)</p>
                 <p class="dynasty-end">1990 CE</p>
@@ -92,7 +93,7 @@
         </div>
 
         <div class="region-content" id="africa">
-            <div class="dynasty" style="top: 180px; height: 246px; left: 0; right: 50%; background: lightblue;">
+            <div class="dynasty" style="top: 180px; height: 246px; left: 4px; right: 50%; background: lightblue;">
                 <p class="dynasty-begin">3100 BCE</p>
                 <p class="dynasty-content">Egypt</p>
                 <p class="dynasty-end">1800 BCE</p>
@@ -101,7 +102,7 @@
                     <p>Ancient Egypt was a civilization of ancient North Africa, concentrated along the lower reaches of the Nile River in the place that is now the country Egypt. Ancient Egyptian civilization followed prehistoric Egypt and coalesced around 3100 BC with the political unification of Upper and Lower Egypt under Menes (often identified with Narmer). The history of ancient Egypt occurred as a series of stable kingdoms, separated by periods of relative instability known as Intermediate Periods: the Old Kingdom of the Early Bronze Age, the Middle Kingdom of the Middle Bronze Age and the New Kingdom of the Late Bronze Age.</p>
                 </span>
             </div>
-            <div class="dynasty" style="top: 200px; height: 400px; left: 50%; right: 0; background: slateblue">
+            <div class="dynasty" style="top: 200px; height: 400px; left: 50%; right: 4px; background: slateblue">
                 <p class="dynasty-begin">3000 BCE</p>
                 <p class="dynasty-content">Bantu Migrations</p>
                 <p class="dynasty-end">1000 BCE</p>
@@ -113,12 +114,39 @@
         </div>
 
         <div class="region-content" id="asia">
-            <div class="dynasty" style="top: 0; height: 900px; left: 0; background: lightseagreen;">
+            <div class="dynasty" style="top: 0; height: 900px; left: 4px; right: 50%; background: lightseagreen;">
                 <p class="dynasty-begin">14500 BCE</p>
                 <p class="dynasty-content">Jomon Society</p>
                 <p class="dynasty-end">300 BCE</p>
                 <span class="dynasty-info">
                     Jomon Society
+                    <p>This is informative...</p>
+                </span>
+            </div>
+            <div class="dynasty" style="top: 300px; height: 60px; left: 50%; right: 4px; background: lightseagreen;">
+                <p class="dynasty-begin">2500 BCE</p>
+                <p class="dynasty-content">Yangshao Society</p>
+                <p class="dynasty-end">2200 BCE</p>
+                <span class="dynasty-info">
+                    Yangshao Society
+                    <p>This is informative...</p>
+                </span>
+            </div>
+            <div class="dynasty" style="top: 360px; height: 86px; left: 50%; right: 4px; background: blanchedalmond;">
+                <p class="dynasty-begin">2200 BCE</p>
+                <p class="dynasty-content">Xia Dynasty</p>
+                <p class="dynasty-end">1766 BCE</p>
+                <span class="dynasty-info">
+                    Xia Dynasty
+                    <p>This is informative...</p>
+                </span>
+            </div>
+            <div class="dynasty" style="top: 446px; height: 128px; left: 50%; right: 4px; background: lightcoral;">
+                <p class="dynasty-begin">1766 BCE</p>
+                <p class="dynasty-content">Shang Dynasty</p>
+                <p class="dynasty-end">1122 BCE</p>
+                <span class="dynasty-info">
+                    Shang Dynasty
                     <p>This is informative...</p>
                 </span>
             </div>
@@ -170,7 +198,7 @@
         </div>
 
         <div class="region-content" id="north-america">
-            <div class="dynasty" style="top: 200px; height: 230px; left: 0; background: lightgoldenrodyellow;">
+            <div class="dynasty" style="top: 200px; height: 230px; left: 4px; background: lightgoldenrodyellow;">
                     <p class="dynasty-begin">3000 BCE</p>
                     <p class="dynasty-content">Chinook Society</p>
                     <p class="dynasty-end">1850 BCE</p>
@@ -190,5 +218,61 @@
         </div>
         
     </div>
+
+<script>
+
+    var element = document.getElementById('container');
+    var box = document.getElementById('year-display');
+    var year = 0;
+
+    var drawLines = function(event) {
+        var y = event.pageY;
+        var hrLine = element.querySelector('.hrLine');
+
+        if (!hrLine) {
+            hrLine = document.createElement('div');
+            hrLine.style.height = "2px";
+            hrLine.classList.add('hrLine');
+            hrLine.style.width = '100%';
+            element.appendChild(hrLine);
+        }
+        hrLine.style.transform = 'translate(0px, ' + y + 'px)';
+
+        if (y >= 30 && y < 730) {
+            box.style.display = "flex";
+            year = (y-30) * 5;
+            year -= 4000;
+        } else if (y >= 730 && y < 1730) {
+            box.style.display = "flex";
+            year = (y-30);
+            year -= 1200;
+        } else if (y >= 1730 && y < 2230) {
+            box.style.display = "flex";
+            year = (y-30);
+            year -= 1200;
+        } else if (y >= 2230 && y < 2730) {
+            box.style.display = "flex";
+            year = (y-30);
+            year -= 1200;
+        } else if (y >= 2730 && y < 3330) {
+            box.style.display = "flex";
+            year = Math.round((y-30) * 0.5);
+            year += 1500;
+            year -= 1350;
+        } else {
+            box.style.display = "none";
+        }
+
+        if (year < 0) {
+            box.innerHTML = -year + " BCE";
+        } else {
+            box.innerHTML = year + " CE";
+        }
+    }
+
+    element.addEventListener('mousemove', function(event) { drawLines(event); });
+    element.addEventListener('mouseout', function(event) { drawLines(event); });
+
+</script>
 </body>
 </html>
