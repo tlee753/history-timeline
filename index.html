@@ -95,10 +95,10 @@
         <div class="region-content" id="africa">
             <div class="dynasty" style="top: 180px; height: 246px; left: 4px; right: 50%; background: lightblue;">
                 <p class="dynasty-begin">3100 BCE</p>
-                <p class="dynasty-content">Egypt</p>
+                <p class="dynasty-content">Ancient Egypt</p>
                 <p class="dynasty-end">1800 BCE</p>
                 <span class="dynasty-info">
-                    Egypt
+                    Ancient Egypt
                     <p>Ancient Egypt was a civilization of ancient North Africa, concentrated along the lower reaches of the Nile River in the place that is now the country Egypt. Ancient Egyptian civilization followed prehistoric Egypt and coalesced around 3100 BC with the political unification of Upper and Lower Egypt under Menes (often identified with Narmer). The history of ancient Egypt occurred as a series of stable kingdoms, separated by periods of relative instability known as Intermediate Periods: the Old Kingdom of the Early Bronze Age, the Middle Kingdom of the Middle Bronze Age and the New Kingdom of the Late Bronze Age.</p>
                 </span>
             </div>
@@ -257,8 +257,15 @@
         } else if (y >= 2730 && y < 3330) {
             box.style.display = "flex";
             year = Math.round((y-30) * 0.5);
-            year += 1500;
-            year -= 1350;
+            year += 150;
+        } else if (y >= 3330 && y < 3790) {
+            box.style.display = "flex";
+            year = Math.round((y-30) * 0.25);
+            year += 975;
+        } else if (y >= 3790 && y < 4290) {
+            box.style.display = "flex";
+            year = Math.round((y-30) * 0.15);
+            year += 1350;
         } else {
             box.style.display = "none";
         }
