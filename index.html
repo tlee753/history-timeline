@@ -93,7 +93,7 @@
         </div>
 
         <div class="region-content" id="africa">
-            <div class="dynasty" style="top: 180px; height: 246px; left: 4px; right: 50%; background: lightblue;">
+            <div class="dynasty" style="top: 180px; height: 246px; right: 50%; background: lightblue;">
                 <p class="dynasty-begin">3100 BCE</p>
                 <p class="dynasty-content">Ancient Egypt</p>
                 <p class="dynasty-end">1800 BCE</p>
@@ -102,7 +102,7 @@
                     <p>Ancient Egypt was a civilization of ancient North Africa, concentrated along the lower reaches of the Nile River in the place that is now the country Egypt. Ancient Egyptian civilization followed prehistoric Egypt and coalesced around 3100 BC with the political unification of Upper and Lower Egypt under Menes (often identified with Narmer). The history of ancient Egypt occurred as a series of stable kingdoms, separated by periods of relative instability known as Intermediate Periods: the Old Kingdom of the Early Bronze Age, the Middle Kingdom of the Middle Bronze Age and the New Kingdom of the Late Bronze Age.</p>
                 </span>
             </div>
-            <div class="dynasty" style="top: 200px; height: 400px; left: 50%; right: 4px; background: slateblue">
+            <div class="dynasty" style="top: 200px; height: 400px; left: 50%; background: slateblue">
                 <p class="dynasty-begin">3000 BCE</p>
                 <p class="dynasty-content">Bantu Migrations</p>
                 <p class="dynasty-end">1000 BCE</p>
@@ -114,7 +114,7 @@
         </div>
 
         <div class="region-content" id="asia">
-            <div class="dynasty" style="top: 0; height: 900px; left: 4px; right: 50%; background: lightseagreen;">
+            <div class="dynasty" style="top: 0; height: 900px; right: 50%; background: lightseagreen;">
                 <p class="dynasty-begin">14500 BCE</p>
                 <p class="dynasty-content">Jomon Society</p>
                 <p class="dynasty-end">300 BCE</p>
@@ -123,7 +123,7 @@
                     <p>This is informative...</p>
                 </span>
             </div>
-            <div class="dynasty" style="top: 300px; height: 60px; left: 50%; right: 4px; background: lightseagreen;">
+            <div class="dynasty" style="top: 300px; height: 60px; left: 50%; background: lightseagreen;">
                 <p class="dynasty-begin">2500 BCE</p>
                 <p class="dynasty-content">Yangshao Society</p>
                 <p class="dynasty-end">2200 BCE</p>
@@ -132,7 +132,7 @@
                     <p>This is informative...</p>
                 </span>
             </div>
-            <div class="dynasty" style="top: 360px; height: 86px; left: 50%; right: 4px; background: blanchedalmond;">
+            <div class="dynasty" style="top: 360px; height: 86px; left: 50%; background: blanchedalmond;">
                 <p class="dynasty-begin">2200 BCE</p>
                 <p class="dynasty-content">Xia Dynasty</p>
                 <p class="dynasty-end">1766 BCE</p>
@@ -141,12 +141,22 @@
                     <p>This is informative...</p>
                 </span>
             </div>
-            <div class="dynasty" style="top: 446px; height: 128px; left: 50%; right: 4px; background: lightcoral;">
+            <div class="dynasty" style="top: 446px; height: 128px; left: 50%; background: lightcoral;">
                 <p class="dynasty-begin">1766 BCE</p>
                 <p class="dynasty-content">Shang Dynasty</p>
                 <p class="dynasty-end">1122 BCE</p>
                 <span class="dynasty-info">
                     Shang Dynasty
+                    <p>This is informative...</p>
+                </span>
+            </div>
+
+            <div class="dynasty" style="top: 3973px; height: 286px; background: lightcoral;">
+                <p class="dynasty-begin">1947 CE</p>
+                <p class="dynasty-content">Modern Japan</p>
+                <p class="dynasty-end">1990 CE</p>
+                <span class="dynasty-info">
+                    Modern Japan
                     <p>This is informative...</p>
                 </span>
             </div>
@@ -237,6 +247,7 @@
             element.appendChild(hrLine);
         }
         hrLine.style.transform = 'translate(0px, ' + y + 'px)';
+        // console.log(y);
 
         if (y >= 30 && y < 730) {
             box.style.display = "flex";

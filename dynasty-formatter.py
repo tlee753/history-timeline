@@ -30,7 +30,7 @@ elif (start >= 1915):
     top /= 0.15
     top -= 3760
 
-print("top is    ", int(-top))
+# print("top is    ", int(-top))
 
 if (end < -500):
     bot = -4000 - end
@@ -57,4 +57,16 @@ elif (end >= 1915):
     bot /= 0.15
     bot -= 3760
 
-print("height is ", int(-bot - -top))
+# print("height is ", int(-bot - -top))
+
+print("""
+<div class="dynasty" style="top: {}px; height: {}px; background: {}};">
+    <p class="dynasty-begin">1947 CE</p>
+    <p class="dynasty-content">Modern Japan</p>
+    <p class="dynasty-end">1990 CE</p>
+    <span class="dynasty-info">
+        Modern Japan
+        <p>This is informative...</p>
+    </span>
+</div>
+""".format(int(-top), int(-bot - -top)), )
