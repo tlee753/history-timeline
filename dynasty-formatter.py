@@ -63,8 +63,8 @@ def timePlacement(begin, end):
 
     return int(-top), int(-bot - -top)
 
-colors = ["coral", "darkturquoise", "dodgerblue", "floralwhite", "plum", "chocolate", "lavender", "goldenrod", "MediumVioletRed", "DeepPink", "firebrick", "palegreen", "seagreen", "lightslategray", "honeydew", "lightsteelblue", "springgreen", "wheat", "slateblue", "orchid", "darkorange", "lightsteelblue", "mediumaquamarine"]
-colors = ["e4e4e4"]
+# colors = ["coral", "darkturquoise", "dodgerblue", "floralwhite", "plum", "chocolate", "lavender", "goldenrod", "MediumVioletRed", "DeepPink", "firebrick", "palegreen", "seagreen", "lightslategray", "honeydew", "lightsteelblue", "springgreen", "wheat", "slateblue", "orchid", "darkorange", "lightsteelblue", "mediumaquamarine"]
+colors = ["#e4e4e4"]
 def colorGenerator(name):
     value = 0
     for l in name:
@@ -193,7 +193,7 @@ with open("generated.html", "w") as outFile:
 
             outFile.write(
 """
-    <div class="dynasty" style="top: {0}px; height: {1}px; {2}background: {3}; opacity: 0.8; border: 1px solid black;">
+    <div class="dynasty" style="top: {0}px; height: {1}px; {2}background: linear-gradient(to bottom, rgba(200, 200, 200, 0.6), {3}); opacity: 0.8;">
         <p class="dynasty-begin">{4}</p>
         <p class="dynasty-content">{5}</p>
         <p class="dynasty-end">{6}</p>
