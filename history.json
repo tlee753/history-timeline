@@ -465,20 +465,86 @@
     },
 
     "north-america": {
-        "adduk civ": {
-            "begin": 50,
+        "Chinook Society": {
+            "begin": -3000,
+            "end": -1850,
+            "desc": "description",
+            "side": 0
+        },
+        "Olmec Society": {
+            "begin": -1200,
             "end": 100,
-            "desc": "hello world",
+            "desc": "description",
+            "side": 0
+        },
+        "Mayan Society": {
+            "begin": 300,
+            "end": 1100,
+            "desc": "description",
             "side": 1
+        },
+        "Toltec Society": {
+            "begin": 900,
+            "end": 1175,
+            "desc": "description",
+            "side": 2
+        },
+        "Aztec Empire": {
+            "begin": 1345,
+            "end": 1520,
+            "desc": "description",
+            "side": 0
+        },
+        "Colonial Rule": {
+            "begin": 1520,
+            "end": 1776,
+            "desc": "description",
+            "side": 0
+        },
+        "United States": {
+            "begin": 1776,
+            "end": 1990,
+            "desc": "description",
+            "side": 1
+        },
+        "Revolutions": {
+            "begin": 1791,
+            "end": 1825,
+            "desc": "description",
+            "side": 2
+        },
+        "Free States": {
+            "begin": 1825,
+            "end": 1990,
+            "desc": "description",
+            "side": 2
         }
     },
 
     "south-america": {
-        "anotpppv": {
-            "begin": 50,
-            "end": 100,
-            "desc": "hello world",
+        "Incan State": {
+            "begin": 1250,
+            "end": 1572,
+            "desc": "description",
             "side": 1
+        },
+        "Colonial Rule": {
+            "begin": 1520,
+            "end": 1791,
+            "desc": "description",
+            "side": 2
+        },
+        "Revolutions": {
+            "begin": 1791,
+            "end": 1825,
+            "desc": "description",
+            "side": 0
+        },
+        "Free States": {
+            "begin": 1825,
+            "end": 1990,
+            "desc": "description",
+            "side": 0
         }
     },
 
