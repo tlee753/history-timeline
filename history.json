@@ -1,13 +1,493 @@
 {
     "africa": {
-        "nile river civilization": {
+        "Ancient Egypt": {
+            "begin": -3100,
+            "end": -1870,
+            "desc": "description",
+            "side": 1
+        },
+        "Bantu Migrations": {
             "begin": -3000,
-            "end": -2500,
-            "desc": "shit heads did dumb things"
+            "end": -1800,
+            "desc": "description",
+            "side": 2
+        },
+        "Macedonian Expansion": {
+            "begin": -336,
+            "end": -327,
+            "desc": "description",
+            "side": 0
+        },
+        "Roman Empire": {
+            "begin": -46,
+            "end": 476,
+            "desc": "description",
+            "side": 0
+        },
+        "Kingdoms of Africa": {
+            "begin": 500,
+            "end": 1600,
+            "desc": "description",
+            "side": 1
+        },
+        "Abbasid Dynasty": {
+            "begin": 750,
+            "end": 1258,
+            "desc": "description",
+            "side": 2
+        },
+        "Mongolian Expansion": {
+            "begin": 1206,
+            "end": 1227,
+            "desc": "description",
+            "side": 0
+        },
+        "European Rule": {
+            "begin": 1652,
+            "end": 1957,
+            "desc": "description",
+            "side": 0
+        },
+        "Movements of Freedom": {
+            "begin": 1957,
+            "end": 1990,
+            "desc": "description",
+            "side": 0
+        }
+    },
+
+    "asia": {
+        "Yangshao Dynasty": {
+            "begin": -2500,
+            "end": -2200,
+            "desc": "description",
+            "side": 0
+        },
+        "Xia Dynasty": {
+            "begin": -2200,
+            "end": -1766,
+            "desc": "description",
+            "side": 0
+        },
+        "Shang Dynasty": {
+            "begin": -1766,
+            "end": -1122,
+            "desc": "description",
+            "side": 0
+        },
+        "Zhou Dynasty": {
+            "begin": -1122,
+            "end": -256,
+            "desc": "description",
+            "side": 1
+        },
+        "Warring States Period": {
+            "begin": -403,
+            "end": -221,
+            "desc": "description",
+            "side": 2
+        },
+        "Qin Dynasty": {
+            "begin": -221,
+            "end": -207,
+            "desc": "description",
+            "side": 0
+        },
+        "Han Dynasty": {
+            "begin": -207,
+            "end": 220,
+            "desc": "description",
+            "side": 0
+        },
+        "Wei, Wu, and Shu Kingdoms": {
+            "begin": 220,
+            "end": 570,
+            "desc": "description",
+            "side": 0
+        },
+        "Sui Dynasty": {
+            "begin": 589,
+            "end": 618,
+            "desc": "description",
+            "side": 0
+        },
+        "Tang Dynasty": {
+            "begin": 618,
+            "end": 907,
+            "desc": "description",
+            "side": 0
+        },
+        "Song Dynasty": {
+            "begin": 960,
+            "end": 1279,
+            "desc": "description",
+            "side": 1
+        },
+        "Mongolian Expansion": {
+            "begin": 1206,
+            "end": 1227,
+            "desc": "description",
+            "side": 0
+        },
+        "The Golden Horde": {
+            "begin": 1237,
+            "end": 1480,
+            "desc": "description",
+            "side": 2
+        },
+        "Yuan Dynasty": {
+            "begin": 1279,
+            "end": 1368,
+            "desc": "description",
+            "side": 1
+        },
+        "Ming Dynasty": {
+            "begin": 1368,
+            "end": 1644,
+            "desc": "description",
+            "side": 1
+        },
+        "Russian Absolutism": {
+            "begin": 1480,
+            "end": 1917,
+            "desc": "description",
+            "side": 2
+        },
+        "Qing Dynasty": {
+            "begin": 1644,
+            "end": 1911,
+            "desc": "description",
+            "side": 1
+        },
+        "Foreign Rule": {
+            "begin": 1776,
+            "end": 1949,
+            "desc": "description",
+            "side": 1
+        },
+        "Soviet Union": {
+            "begin": 1917,
+            "end": 1990,
+            "desc": "description",
+            "side": 2
+        },
+        "Communist China": {
+            "begin": 1949,
+            "end": 1990,
+            "desc": "description",
+            "side": 1
         }
     },
 
     "europe": {
+        "Minoan/Mycenaen Societies": {
+            "begin": -2200,
+            "end": -1100,
+            "desc": "description",
+            "side": 0
+        },
+        "Greek Polis socities": {
+            "begin": -800,
+            "end": -336,
+            "desc": "description",
+            "side": 1
+        },
+        "Roman Republic": {
+            "begin": -509,
+            "end": -46,
+            "desc": "description",
+            "side": 2
+        },
+        "Macedonian Expansion": {
+            "begin": -336,
+            "end": -327,
+            "desc": "description",
+            "side": 1
+        },
+        "Antigonid Empire": {
+            "begin": -327,
+            "end": -146,
+            "desc": "description",
+            "side": 1
+        },
+        "Roman Empire": {
+            "begin": -46,
+            "end": 476,
+            "desc": "description",
+            "side": 2
+        },
+        "Byzantium": {
+            "begin": 305,
+            "end": 1453,
+            "desc": "description",
+            "side": 1
+        },
+        "European Middle Ages": {
+            "begin": 476,
+            "end": 1453,
+            "desc": "description",
+            "side": 2
+        },
+        "European Rennaissance": {
+            "begin": 1300,
+            "end": 1600,
+            "desc": "description",
+            "side": 2
+        },
+        "The Golden Horde": {
+            "begin": 1237,
+            "end": 1480,
+            "desc": "description",
+            "side": 1
+        },
+        "Russian Absolutism": {
+            "begin": 1480,
+            "end": 1917,
+            "desc": "description",
+            "side": 1
+        },
+        "European Advances and Englightenment": {
+            "begin": 1500,
+            "end": 1800,
+            "desc": "description",
+            "side": 2
+        },
+        "European Imperialization": {
+            "begin": 1800,
+            "end": 1914,
+            "desc": "description",
+            "side": 2
+        },
+        "Soviet Union": {
+            "begin": 1917,
+            "end": 1990,
+            "desc": "description",
+            "side": 1
+        },
+        "War and the Modern Scene": {
+            "begin": 1914,
+            "end": 1990,
+            "desc": "description",
+            "side": 2
+        }
+    },
 
+    "middle-east": {
+        "Sumer": {
+            "begin": -3200,
+            "end": -2350,
+            "desc": "description",
+            "side": 0
+        },
+        "Babylon": {
+            "begin": -2350,
+            "end": -1600,
+            "desc": "description",
+            "side": 0
+        },
+        "Hittite State": {
+            "begin": -1450,
+            "end": -1260,
+            "desc": "description",
+            "side": 0
+        },
+        "Assyria": {
+            "begin": -1000,
+            "end": -612,
+            "desc": "description",
+            "side": 0
+        },
+        "New Babylonians": {
+            "begin": -605,
+            "end": -550,
+            "desc": "description",
+            "side": 0
+        },
+        "Achaemenid Dynasty": {
+            "begin": -550,
+            "end": -330,
+            "desc": "description",
+            "side": 0
+        },
+        "Macedonian Expansion": {
+            "begin": -336,
+            "end": -327,
+            "desc": "description",
+            "side": 0
+        },
+        "Selucid Dynasty": {
+            "begin": -328,
+            "end": -83,
+            "desc": "description",
+            "side": 1
+        },
+        "Parthian Dynasty": {
+            "begin": -247,
+            "end": 224,
+            "desc": "description",
+            "side": 2
+        },
+        "Sasanid Dynasty": {
+            "begin": 224,
+            "end": 651,
+            "desc": "description",
+            "side": 0
+        },
+        "Ummayad Dynasty": {
+            "begin": 661,
+            "end": 750,
+            "desc": "description",
+            "side": 0
+        },
+        "Abbasid Dynasty": {
+            "begin": 750,
+            "end": 1258,
+            "desc": "description",
+            "side": 2
+        },
+        "Ottoman Empire": {
+            "begin": 1289,
+            "end": 1923,
+            "desc": "description",
+            "side": 2
+        },
+        "Ilkhanate of Persia": {
+            "begin": 1258,
+            "end": 1338,
+            "desc": "description",
+            "side": 2
+        },
+        "Timurid Empire": {
+            "begin": 1185,
+            "end": 1506,
+            "desc": "description",
+            "side": 1
+        },
+        "Assorted States": {
+            "begin": 1506,
+            "end": 1990,
+            "desc": "description",
+            "side": 1
+        }
+    },
+
+    "southeast-asia": {
+        "Harrapan Society": {
+            "begin": -2000,
+            "end": -1500,
+            "desc": "description",
+            "side": 0
+        },
+        "Vedic Age": {
+            "begin": -1500,
+            "end": -500,
+            "desc": "description",
+            "side": 0
+        },
+        "Macedonian Expansion": {
+            "begin": -336,
+            "end": -327,
+            "desc": "description",
+            "side": 0
+        },
+        "Mauryan Dynasty": {
+            "begin": -321,
+            "end": -185,
+            "desc": "description",
+            "side": 0
+        },
+        "Bactrian Rule": {
+            "begin": -182,
+            "end": 1,
+            "desc": "description",
+            "side": 0
+        },
+        "Kushan Empire": {
+            "begin": 1,
+            "end": 300,
+            "desc": "description",
+            "side": 0
+        },
+        "Gupta Dynasty": {
+            "begin": 320,
+            "end": 550,
+            "desc": "description",
+            "side": 0
+        },
+        "Harsha's Kingdom": {
+            "begin": 606,
+            "end": 648,
+            "desc": "description",
+            "side": 0
+        },
+        "Chola Kingdom": {
+            "begin": 850,
+            "end": 1267,
+            "desc": "description",
+            "side": 0
+        },
+        "Mongolian Expansion": {
+            "begin": 1206,
+            "end": 1227,
+            "desc": "description",
+            "side": 0
+        },
+        "Sultanate of Delhi": {
+            "begin": 1206,
+            "end": 1526,
+            "desc": "description",
+            "side": 1
+        },
+        "Vijayanagar": {
+            "begin": 1336,
+            "end": 1565,
+            "desc": "description",
+            "side": 2
+        },
+        "Mughal Dynasty": {
+            "begin": 1526,
+            "end": 1858,
+            "desc": "description",
+            "side": 1
+        },
+        "British Rule": {
+            "begin": 1858,
+            "end": 1947,
+            "desc": "description",
+            "side": 0
+        },
+        "India": {
+            "begin": 1957,
+            "end": 1990,
+            "desc": "description",
+            "side": 0
+        }
+    },
+
+    "north-america": {
+        "adduk civ": {
+            "begin": 50,
+            "end": 100,
+            "desc": "hello world",
+            "side": 1
+        }
+    },
+
+    "south-america": {
+        "anotpppv": {
+            "begin": 50,
+            "end": 100,
+            "desc": "hello world",
+            "side": 1
+        }
+    },
+
+    "oceania": {
+        "anererr civ": {
+            "begin": 50,
+            "end": 100,
+            "desc": "hello world",
+            "side": 1
+        }
     }
 }
