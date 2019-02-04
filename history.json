@@ -426,17 +426,17 @@
             "desc": "description",
             "side": 0
         },
-        "Mongolian Expansion": {
-            "begin": 1206,
-            "end": 1227,
-            "desc": "description",
-            "side": 0
-        },
         "Sultanate of Delhi": {
             "begin": 1206,
             "end": 1526,
             "desc": "description",
             "side": 1
+        },
+        "Mongolian Expansion": {
+            "begin": 1206,
+            "end": 1227,
+            "desc": "description",
+            "side": 0
         },
         "Vijayanagar": {
             "begin": 1336,

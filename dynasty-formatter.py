@@ -63,7 +63,7 @@ def timePlacement(begin, end):
 
     return int(-top), int(-bot - -top)
 
-colors = ["coral", "darkturquoise", "dodgerblue", "floralwhite", "plum", "chocolate", "lavender", "goldenrod", "lightslategray", "honeydew", "lightsteelblue", "springgreen", "wheat", "slateblue", "orchid", "darkorange", "lightsteelblue", "mediumaquamarine"]
+colors = ["coral", "darkturquoise", "dodgerblue", "floralwhite", "plum", "chocolate", "lavender", "goldenrod", "MediumVioletRed", "firebrick", "palegreen", "seagreen", "lightslategray", "honeydew", "lightsteelblue", "springgreen", "wheat", "slateblue", "orchid", "darkorange", "lightsteelblue", "mediumaquamarine"]
 def colorGenerator(name):
     value = 0
     for l in name:
