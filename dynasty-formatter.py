@@ -184,13 +184,13 @@ with open("generated.html", "w") as outFile:
             endString = ''
             if (abs(history[region][dynasty]["begin"] - history[region][dynasty]["end"]) > 30) and dynasty != "New Babylonians":
                 if (history[region][dynasty]["begin"] > 0):
-                    beginString = '<p class="dynasty-begin">' + str(history[region][dynasty]["begin"]) + " CE" + "</p>"
+                    beginString = '<p class="dynasty-begin">' + str(abs(history[region][dynasty]["begin"])) + " CE" + "</p>"
                 else:
-                    beginString = '<p class="dynasty-begin">' + str(history[region][dynasty]["begin"]) + " BCE" + "</p>"
+                    beginString = '<p class="dynasty-begin">' + str(abs(history[region][dynasty]["begin"])) + " BCE" + "</p>"
                 if (history[region][dynasty]["end"] > 0):
-                    endString = '<p class="dynasty-end">' + str(history[region][dynasty]["end"]) + " CE" + "</p>"
+                    endString = '<p class="dynasty-end">' + str(abs(history[region][dynasty]["end"])) + " CE" + "</p>"
                 else:
-                    endString = '<p class="dynasty-end">' + str(history[region][dynasty]["end"]) + " BCE" + "</p>"
+                    endString = '<p class="dynasty-end">' + str(abs(history[region][dynasty]["end"])) + " BCE" + "</p>"
 
             outFile.write(
 """
