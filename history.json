@@ -202,7 +202,7 @@
             "begin": -336,
             "end": -327,
             "desc": "description",
-            "side": 1
+            "side": 0
         },
         "Antigonid Empire": {
             "begin": -327,
@@ -228,9 +228,9 @@
             "desc": "description",
             "side": 2
         },
-        "European Rennaissance": {
-            "begin": 1300,
-            "end": 1600,
+        "Rennaissance": {
+            "begin": 1453,
+            "end": 1500,
             "desc": "description",
             "side": 2
         },
@@ -346,20 +346,20 @@
             "side": 2
         },
         "Ottoman Empire": {
-            "begin": 1289,
+            "begin": 1299,
             "end": 1923,
-            "desc": "description",
-            "side": 2
-        },
-        "Ilkhanate of Persia": {
-            "begin": 1258,
-            "end": 1338,
             "desc": "description",
             "side": 2
         },
         "Timurid Empire": {
             "begin": 1185,
             "end": 1506,
+            "desc": "description",
+            "side": 1
+        },
+        "Ilkhanate of Persia": {
+            "begin": 1258,
+            "end": 1338,
             "desc": "description",
             "side": 1
         },
@@ -549,11 +549,5 @@
     },
 
     "oceania": {
-        "anererr civ": {
-            "begin": 50,
-            "end": 100,
-            "desc": "hello world",
-            "side": 1
-        }
     }
 }

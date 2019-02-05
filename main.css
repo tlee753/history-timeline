@@ -25,9 +25,10 @@ p {
 
 .straightLine, .hrLine {
   position: absolute;
-  background-color: red; }
+  background-color: white; }
 
 #container {
+  position: relative;
   display: grid;
   grid-template-columns: 4% 12% 12% 12% 12% 12% 12% 12% 12%;
   grid-template-rows: 30px 4260px 200px; }
@@ -37,21 +38,21 @@ p {
     position: relative;
     border-radius: 2px; }
   #container #africa {
-    background: #ff8080; }
+    background: rgba(255, 111, 111, 0.95); }
   #container #asia {
-    background: #ffb79d; }
+    background: rgba(251, 176, 169, 0.95); }
   #container #europe {
-    background: #ffe766; }
+    background: rgba(255, 235, 128, 0.95); }
   #container #middle-east {
-    background: #a7e1c1; }
+    background: rgba(147, 219, 179, 0.95); }
   #container #southeast-asia {
-    background: #57c889; }
+    background: rgba(87, 199, 137, 0.95); }
   #container #north-america {
-    background: #2cd9d0; }
+    background: rgba(131, 233, 227, 0.95); }
   #container #south-america {
-    background: #8db3d3; }
+    background: rgba(123, 167, 204, 0.95); }
   #container #oceania {
-    background: #be00be; }
+    background: rgba(227, 141, 255, 0.95); }
   #container .dynasty {
     background: white;
     color: black;
@@ -66,27 +67,27 @@ p {
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 1;
+      z-index: 2;
       width: 100%; }
     #container .dynasty .dynasty-content {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
-      z-index: 1;
+      z-index: 2;
       width: 100%; }
     #container .dynasty .dynasty-end {
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 1;
+      z-index: 2;
       width: 100%; }
     #container .dynasty .dynasty-info {
       visibility: hidden;
       width: 240px;
       position: absolute;
-      z-index: 2;
+      z-index: 3;
       top: 100%;
       left: 50%;
       margin-left: -120px;

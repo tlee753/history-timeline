@@ -26,10 +26,11 @@ p
 
 .straightLine, .hrLine
     position: absolute
-    background-color: red
+    background-color: white
 
 
 #container
+    position: relative
     display: grid
     grid-template-columns: 4% 12% 12% 12% 12% 12% 12% 12% 12%
     grid-template-rows: 30px 4260px 200px
@@ -43,28 +44,28 @@ p
         border-radius: 2px
 
     #africa
-        background: lighten(maroon, 50%)
+        background: rgba(255, 111, 111, 0.95)
 
     #asia
-        background: lighten(coral, 15%)
+        background: rgba(251, 176, 169, 0.95)
     
     #europe
-        background: lighten(gold, 20%)
+        background: rgba(255, 235, 128, 0.95)
 
     #middle-east
-        background: lighten(mediumseagreen, 30%)
+        background: rgba(147, 219, 179, 0.95)
         
     #southeast-asia
-        background: lighten(seagreen, 20%)
+        background: rgba(87, 199, 137, 0.95)
 
     #north-america
-        background: lighten(lightseagreen, 10%)
+        background: rgba(131, 233, 227, 0.95)
 
     #south-america
-        background: lighten(steelblue, 20%)
+        background: rgba(123, 167, 204, 0.95)
 
     #oceania
-        background: lighten(darkmagenta, 10%)
+        background: rgba(227,141,255, 0.95)
 
     .dynasty
         background: white
@@ -81,7 +82,7 @@ p
             top: 0
             left: 50%
             transform: translateX(-50%)
-            z-index: 1
+            z-index: 2
             width: 100%
 
         .dynasty-content
@@ -89,7 +90,7 @@ p
             top: 50%
             left: 50%
             transform: translateX(-50%) translateY(-50%)
-            z-index: 1
+            z-index: 2
             width: 100%
 
         .dynasty-end
@@ -97,14 +98,14 @@ p
             bottom: 0
             left: 50%
             transform: translateX(-50%)
-            z-index: 1
+            z-index: 2
             width: 100%
 
         .dynasty-info
             visibility: hidden
             width: 240px
             position: absolute
-            z-index: 2
+            z-index: 3
             top: 100%
             left: 50%
             margin-left: -120px

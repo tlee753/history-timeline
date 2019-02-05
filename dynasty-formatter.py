@@ -94,7 +94,7 @@ with open("generated.html", "w") as outFile:
         <div class="region-title">Oceania</div>
 
         <div class="region-content">
-            <div class="dynasty" style="top: 0px; height: 700px; background: plum;">
+            <div class="dynasty" style="top: 0px; height: 700px; background: plum; opacity: 0.95;">
                 <p class="dynasty-begin">4000 BCE</p>
                 <p class="dynasty-content">Early Complex Societies (Lines = 500 Years)</p>
                 <p class="dynasty-end">500 BCE</p>
@@ -105,7 +105,7 @@ with open("generated.html", "w") as outFile:
                 <hr class="timeline-marker" style="top: 500px">
                 <hr class="timeline-marker" style="top: 600px">
             </div>
-            <div class="dynasty" style="top: 700px; height: 1000px; background: crimson;">
+            <div class="dynasty" style="top: 700px; height: 1000px; background: crimson; opacity: 0.95;">
                 <p class="dynasty-begin">500 BCE</p>
                 <p class="dynasty-content">Classical Societies (Lines = 100 Years)</p>
                 <p class="dynasty-end">500 CE</p>
@@ -119,7 +119,7 @@ with open("generated.html", "w") as outFile:
                 <hr class="timeline-marker" style="top: 800px">
                 <hr class="timeline-marker" style="top: 900px">
             </div>
-            <div class="dynasty" style="top: 1700px; height: 500px; background: peru;">
+            <div class="dynasty" style="top: 1700px; height: 500px; background: peru; opacity: 0.95;">
                 <p class="dynasty-begin">500 CE</p>
                 <p class="dynasty-content">Post Classical Societies (Lines = 100 Years)</p>
                 <p class="dynasty-end">1000 CE</p>
@@ -128,7 +128,7 @@ with open("generated.html", "w") as outFile:
                 <hr class="timeline-marker" style="top: 300px">
                 <hr class="timeline-marker" style="top: 400px">
             </div>
-            <div class="dynasty" style="top: 2200px; height: 500px; background: wheat;">
+            <div class="dynasty" style="top: 2200px; height: 500px; background: wheat; opacity: 0.95;">
                 <p class="dynasty-begin">1000 CE</p>
                 <p class="dynasty-content">Cross Cultural Interaction (Lines = 100 Years)</p>
                 <p class="dynasty-end">1500 CE</p>
@@ -137,7 +137,7 @@ with open("generated.html", "w") as outFile:
                 <hr class="timeline-marker" style="top: 300px">
                 <hr class="timeline-marker" style="top: 400px">
             </div>
-            <div class="dynasty" style="top: 2700px; height: 600px; background: mediumaquamarine;">
+            <div class="dynasty" style="top: 2700px; height: 600px; background: mediumaquamarine; opacity: 0.95;">
                 <p class="dynasty-begin">1500 CE</p>
                 <p class="dynasty-content">Global Interdependence (Lines = 50 Years)</p>
                 <p class="dynasty-end">1800 CE</p>
@@ -149,7 +149,7 @@ with open("generated.html", "w") as outFile:
                 <hr class="timeline-marker" style="top: 600px">
                 <hr class="timeline-marker" style="top: 700px">
             </div>
-            <div class="dynasty" style="top: 3300px; height: 460px; background: DarkCyan;">
+            <div class="dynasty" style="top: 3300px; height: 460px; background: DarkCyan; opacity: 0.95;">
                 <p class="dynasty-begin">1800 CE</p>
                 <p class="dynasty-content">Industry and Imperialism (Lines = 25 Years)</p>
                 <p class="dynasty-end">1915 CE</p>
@@ -158,7 +158,7 @@ with open("generated.html", "w") as outFile:
                 <hr class="timeline-marker" style="top: 300px">
                 <hr class="timeline-marker" style="top: 400px">
             </div>
-            <div class="dynasty" style="top: 3760px; height: 500px; background: CornflowerBlue;">
+            <div class="dynasty" style="top: 3760px; height: 500px; background: CornflowerBlue; opacity: 0.95;">
                 <p class="dynasty-begin">1915 CE</p>
                 <p class="dynasty-content">The Contemporary World (Lines = 15 Years)</p>
                 <p class="dynasty-end">1990 CE</p>
@@ -176,27 +176,28 @@ with open("generated.html", "w") as outFile:
             pixLocate = timePlacement(history[region][dynasty]["begin"], history[region][dynasty]["end"])
             side = ""
             if (history[region][dynasty]["side"] == 1):
-                side = "right: 50%; "
+                side = "right: calc(50% + 2px); "
             elif (history[region][dynasty]["side"] == 2):
-                side = "left: 50%; "
+                side = "left: calc(50% + 2px); "
             
-            beginString = "0 CE"
-            endString = "0 CE"
-            if (history[region][dynasty]["begin"] > 0):
-                beginString = str(history[region][dynasty]["begin"]) + " CE"
-            else:
-                beginString = str(history[region][dynasty]["begin"]) + " BCE"
-            if (history[region][dynasty]["end"] > 0):
-                endString = str(history[region][dynasty]["end"]) + " CE"
-            else:
-                endString = str(history[region][dynasty]["end"]) + " BCE"
+            beginString = ''
+            endString = ''
+            if (abs(history[region][dynasty]["begin"] - history[region][dynasty]["end"]) > 30) and dynasty != "New Babylonians":
+                if (history[region][dynasty]["begin"] > 0):
+                    beginString = '<p class="dynasty-begin">' + str(history[region][dynasty]["begin"]) + " CE" + "</p>"
+                else:
+                    beginString = '<p class="dynasty-begin">' + str(history[region][dynasty]["begin"]) + " BCE" + "</p>"
+                if (history[region][dynasty]["end"] > 0):
+                    endString = '<p class="dynasty-end">' + str(history[region][dynasty]["end"]) + " CE" + "</p>"
+                else:
+                    endString = '<p class="dynasty-end">' + str(history[region][dynasty]["end"]) + " BCE" + "</p>"
 
             outFile.write(
 """
-    <div class="dynasty" style="top: {0}px; height: {1}px; {2}background: linear-gradient(to bottom, rgba(200, 200, 200, 0.6), {3}); opacity: 0.8;">
-        <p class="dynasty-begin">{4}</p>
+    <div class="dynasty" style="top: {0}px; height: {1}px; {2}background: linear-gradient(to bottom, rgba(200, 200, 200, 0.6), {3});">
+        {4}
         <p class="dynasty-content">{5}</p>
-        <p class="dynasty-end">{6}</p>
+        {6}
         <span class="dynasty-info">
             {5}
             <p>{7}</p>
@@ -220,7 +221,8 @@ with open("generated.html", "w") as outFile:
 
         if (!hrLine) {
             hrLine = document.createElement('div');
-            hrLine.style.height = "2px";
+            hrLine.style.height = "4px";
+            hrLine.style.zIndex = "-1";
             hrLine.classList.add('hrLine');
             hrLine.style.width = '100%';
             element.appendChild(hrLine);
@@ -269,6 +271,12 @@ with open("generated.html", "w") as outFile:
 
     element.addEventListener('mousemove', function(event) { drawLines(event); });
     element.addEventListener('mouseout', function(event) { drawLines(event); });
+
+    var el = document.getElementByClass("dynasty-info");
+    do {
+        var styles = window.getComputedStyle(el);
+        console.log(styles.zIndex, el);
+    } while(el.parentElement && (el = el.parentElement));
 
 </script>
 </body>
