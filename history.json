@@ -240,6 +240,12 @@
             "desc": "description",
             "side": 1
         },
+        "Mongolian Expansion": {
+            "begin": 1206,
+            "end": 1227,
+            "desc": "description",
+            "side": 0
+        },
         "Russian Absolutism": {
             "begin": 1480,
             "end": 1917,
