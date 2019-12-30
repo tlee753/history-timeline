@@ -272,11 +272,11 @@ with open("generated.html", "w") as outFile:
     element.addEventListener('mousemove', function(event) { drawLines(event); });
     element.addEventListener('mouseout', function(event) { drawLines(event); });
 
-    var el = document.getElementByClass("dynasty-info");
-    do {
-        var styles = window.getComputedStyle(el);
-        console.log(styles.zIndex, el);
-    } while(el.parentElement && (el = el.parentElement));
+    // var el = document.getElementsByClassName("dynasty-info")[0];
+    // do {
+    //     var styles = window.getComputedStyle(el);
+    //     console.log(styles.zIndex, el);
+    // } while(el.parentElement && (el = el.parentElement));
 
 </script>
 </body>

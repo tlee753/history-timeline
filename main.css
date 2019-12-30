@@ -94,7 +94,10 @@ p {
       background: white;
       color: black;
       border-radius: 2px;
-      padding: 0 4px; }
+      padding: 0 4px;
+      word-break: normal; }
+      #container .dynasty .dynasty-info p {
+        text-align: left; }
     #container .dynasty:hover .dynasty-info {
       visibility: visible; }
     #container .dynasty .timeline-marker {
